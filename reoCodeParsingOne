@@ -1,0 +1,56 @@
+reoAIWorks2
+AI 기반 Java 코드 분석 및 시각화 시스템
+
+📁 리소스 구조
+```
+reoAIWorks2/
+├── alembic/                # DB 마이그레이션 관리 (alembic)
+│   ├── env.py
+│   ├── script.py.mako
+│   └── versions/
+├── config/                 # 환경설정 파일
+├── data/                   # 데이터 샘플/결과
+├── docs/                   # 문서화 자료 (비어있음)
+├── logs/                   # 로그 파일
+├── models/                 # (ORM 모델 등, 현재 비어있음)
+├── reoaiworks.egg-info/    # 패키지 메타정보
+├── src/
+│   ├── __init__.py
+│   ├── api/                # FastAPI 엔드포인트
+│   │   ├── __init__.py
+│   │   └── code_analysis.py
+│   ├── core/               # 환경설정, 로깅 등 핵심 유틸리티
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   └── logging.py
+│   ├── database/           # DB 연동 (비어있음)
+│   ├── logs/               # 서비스 로그
+│   ├── models/             # (ORM 모델 등, 현재 비어있음)
+│   ├── services/           # 비즈니스 로직 (Java 코드 분석 등)
+│   │   ├── __init__.py
+│   │   └── code_analyzer.py
+│   ├── static/             # 정적 리소스 (비어있음)
+│   ├── templates/          # Jinja2 템플릿 (웹 UI)
+│   │   └── index.html
+│   ├── utils/              # 유틸리티
+│   └── main.py             # FastAPI 앱 진입점
+├── tests/                  # 테스트 코드 (unit, integration)
+│   ├── integration/
+│   └── unit/
+├── visualizations/         # 시각화 결과/샘플 (비어있음)
+├── requirements.txt        # 주요 파이썬 패키지
+├── setup.py                # 패키지 메타/의존성
+├── alembic.ini             # Alembic 설정
+├── 개발_진행상황_요약.md   # 개발 진행상황 요약
+├── result.json             # 분석 결과 샘플
+└── ... (기타 데이터/샘플)
+```
+
+
+
+
+
+
+
+
+
